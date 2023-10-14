@@ -136,4 +136,4 @@ EXPOSE 38884
 
 LABEL "org.opencontainers.image.description"="An image of a modified monero-lws suited for CI and tests."
 
-CMD ["sh", "-c", "/usr/bin/monero-lws-daemon --network $NETWORK --daemon tcp://$MONERO_DAEMON_ADDRESS --confirm-external-bind --rest-server http://0.0.0.0:38884/basic --admin-rest-server http://0.0.0.0:38884/admin --db-path /home/monero-lws/.bitmonero/light_wallet_server"]
+CMD ["sh", "-c", "monero-lws-daemon --network $NETWORK --daemon tcp://$MONERO_DAEMON_ADDRESS --confirm-external-bind --rest-server http://0.0.0.0:38884/basic --admin-rest-server http://0.0.0.0:38884/admin --db-path /home/monero-lws/.bitmonero/light_wallet_server"]
