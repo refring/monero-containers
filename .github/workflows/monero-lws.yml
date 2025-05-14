@@ -7,6 +7,13 @@ on:
       - 'monero-lws/Dockerfile'
       - 'monero-lws/TAG'
 
+  pull_request:
+    types: [opened, reopened]
+    paths:
+      - 'monerod/Dockerfile'
+      - 'monerod/SHASUM'
+      - 'monerod/VERSION'
+
 jobs:
   monero-lws:
     name: Build

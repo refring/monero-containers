@@ -7,6 +7,12 @@ on:
       - 'monerod/Dockerfile'
       - 'monerod/SHASUM'
       - 'monerod/VERSION'
+  pull_request:
+    types: [opened, reopened]
+    paths:
+      - 'monerod/Dockerfile'
+      - 'monerod/SHASUM'
+      - 'monerod/VERSION'
 
 jobs:
   monerod:
