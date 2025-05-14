@@ -6,7 +6,7 @@ FROM ubuntu:20.04 as build
 # Set monerod tag to install from github
 ARG TAG
 ARG LWS_BRANCH
-ENV MNRTAG=${TAG:-0.18.3.4}
+ENV MNRTAG=${TAG:-0.18.4.0}
 ENV LWS_BRANCH=${LWS_BRANCH:-master}
 RUN echo $MNRTAG
 
