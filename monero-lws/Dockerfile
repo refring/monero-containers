@@ -7,7 +7,7 @@ FROM ubuntu:20.04 as build
 ARG TAG
 ARG LWS_BRANCH
 ENV MNRTAG=${TAG:-0.18.4.0}
-ENV LWS_BRANCH=${LWS_BRANCH:-master}
+ENV LWS_BRANCH=${LWS_BRANCH:-release-v0.3_0.18}
 RUN echo $MNRTAG
 
 # Install all dependencies for a static build
